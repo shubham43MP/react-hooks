@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const Counter = () => {
-    const [ count, setCount ] = useState( 0 )
-    // useEffect = () => {
-    //     console.log( 'Demo For occurence', count )
-    // }
+    const initialState = 0
+    const [ count, setCount ] = useState( initialState )
     return (
     <div>
         Count: 
         <label> { count } </label>
         <button onClick={ () => setCount( count + 1) }>+</button>
         <button onClick={ () => setCount( count - 1) }>-</button>
+        <button onClick={ () => setCount( initialState) }>Reset</button>
     </div>
     )
  }
