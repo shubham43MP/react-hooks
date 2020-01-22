@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import EffectHookExample1 from './components/effectHookExample1'
 import EffectHookExample2 from './components/effectHookExample2'
 import EffectHookExample3 from './components/effectHookExample3'
+import EffectHookExample4 from './components/effectHookExample4'
 import './App.css';
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
       </header> */}
       {/* < EffectHookExample1 /> */}
       {/* < EffectHookExample2 /> */}
-      < EffectHookExample3 />
+      {/* < EffectHookExample3 /> */}
+      <EffectHookExample4 />
     </div>
   );
 }

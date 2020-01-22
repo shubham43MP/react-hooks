@@ -10,6 +10,10 @@ const EffectHookExample3 = ( props ) => {
     useEffect( () => {
         console.log( 'useEffect called' )
         window.addEventListener( 'mousemove', logMousePosition )
+        return () => {
+            console.log( 'UNMOUNTING' )
+            window.removeEventListener( 'mousemove', logMousePosition )
+        }
         }, [] )
     const logMousePosition = e => {
         console.log( 'Mouse Event' )
