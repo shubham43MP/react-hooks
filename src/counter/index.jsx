@@ -13,8 +13,8 @@ const Counter = () => {
     <div>
         Count: 
         <label> { count } </label>
-        <button onClick={ () => setCount( count + 1) }>+</button>
-        <button onClick={ () => setCount( count - 1) }>-</button>
+        <button onClick={ () => setCount( prevCount => prevCount + 1 ) }>+</button>
+        <button onClick={ () => setCount( prevCount => prevCount - 1 ) }>-</button>
         <button onClick={ () => setCount( initialState) }>Reset</button>
         <button onClick={ incrementByTen }>Increment by 10</button>
     </div>
