@@ -5,7 +5,9 @@ const Counter = () => {
     const [ count, setCount ] = useState( initialState )
 
     const incrementByTen = () => {
-        return ( count + 10 )
+        for ( let i = 0; i < 10; i++ ){
+            setCount( prevCount => prevCount + 1 )
+        }
     }
     return (
     <div>
@@ -14,7 +16,7 @@ const Counter = () => {
         <button onClick={ () => setCount( count + 1) }>+</button>
         <button onClick={ () => setCount( count - 1) }>-</button>
         <button onClick={ () => setCount( initialState) }>Reset</button>
-        <button onClick={ () => setCount( incrementByTen) }>Increment by 10</button>
+        <button onClick={ incrementByTen }>Increment by 10</button>
     </div>
     )
  }
