@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import EffectHookExample1 from './components/effectHookExample1'
 import EffectHookExample2 from './components/effectHookExample2'
+import EffectHookExample3 from './components/effectHookExample3'
 import './App.css';
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         </a>
       </header> */}
       {/* < EffectHookExample1 /> */}
-      < EffectHookExample2 />
+      {/* < EffectHookExample2 /> */}
+      < EffectHookExample3 />
     </div>
   );
 }
