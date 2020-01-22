@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 
 const ObjectCounter = () => {
-    const initialState = 0
-    const [ name, setName ] = useState({ firstName: '', lastName: '' } )
+    const [ name, setName ] = useState({ firstName: 'Tom', lastName: 'John' } )
+
+    const setNameRandom = () => {
+        setName( prevName => ( { firstName: 'New',  lastName: 'Name' } ) )
+    }
 
     return (
     <div>
-        Object Counter: { name }
+        Object : { name.firstName + ' ' + name.lastName }
+        <button onClick = { setNameRandom }> Set Name </button>
     </div>
     )
  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Counter from './components/counter/index'
+import ObjectCounter from './components/counterWithObject/index'
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           Learn React
         </a>
         <Counter/>
+        <ObjectCounter/>
       </header>
     </div>
   );
