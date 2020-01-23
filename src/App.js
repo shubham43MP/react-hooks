@@ -6,6 +6,7 @@ import EffectHookExample3 from './components/effectHookExample3'
 import EffectHookExample4 from './components/effectHookExample4'
 import IntervalHookCounter5 from './components/intervalHookCounter5'
 import DataFetching from './components/dataFetching6'
+import DataFetching7 from './components/dataFetching7'
 import './App.css';
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
       {/* < EffectHookExample3 /> */}
       {/* <EffectHookExample4 /> */}
       {/* <IntervalHookCounter5 /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <DataFetching7 />
     </div>
   );
 }
