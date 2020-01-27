@@ -24,3 +24,14 @@ reducer( currentState, action )
 Important to note:
 useReducer + useContext ----> Global State Management
 useReducer              ----> Local State Management
+
+
+
+useState vs useReducer
+
+Type                useState                              useReducer
+type of state      number, string or boolean              Object/Array
+number of state transitions   1-2                         Too Many
+Related State XSitions     No                             Yes
+Scope                Local                                Global
+

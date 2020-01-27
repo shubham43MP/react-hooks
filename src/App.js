@@ -7,6 +7,7 @@ import ComponentA from './components/ComponentA'
 import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
 import DataFetching1 from './components/dataFetching1'
+import DataFetching2 from './components/dataFetching2'
 import './App.css';
 
 export const CountContext = React.createContext()
@@ -38,11 +39,12 @@ function App() {
         {/* <UseReducerExample1/> */}
         {/* <UseReducerExample2 /> */}
         {/* <UseReducerExample3 /> */}
-        Counter --------- { count }
+        {/* Counter --------- { count }
         <ComponentA />
         <ComponentB />
-        <ComponentC />
-        <DataFetching1 />
+        <ComponentC /> */}
+        {/* <DataFetching1 /> */}
+        <DataFetching2 />
       </div>
     </CountContext.Provider>
   );
