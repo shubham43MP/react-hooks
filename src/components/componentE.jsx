@@ -12,7 +12,7 @@ const componentE = ( ) => {
                         <ChannelContext.Consumer>
                             {
                                 channel => {
-                                    return <div> User Context Value: { user }, Channel Context Value: { channel } </div>
+                                    return <div> Before useContext : User Context Value: { user }, Channel Context Value: { channel } </div>
                                 }
                             }
                         </ChannelContext.Consumer>

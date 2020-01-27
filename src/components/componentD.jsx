@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import ComponentE from './componentE'
+import { UserContext, ChannelContext } from '../App'
 
-const componentD = ( ) => {
+const ComponentD = ( ) => {
 
+    const user = useContext( UserContext )
+    const channel = useContext( ChannelContext )
     return ( 
         <div>
+            After useContext : { user } ---------------- { channel }
             <ComponentE />
         </div>
     )
  }
 
- export default componentD
+ export default ComponentD
