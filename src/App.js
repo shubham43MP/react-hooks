@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import UseReducerExample1 from './components/useReducerCounter'
+import UseReducerExample2 from './components/useReducerCounter2'
 import './App.css';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
         </a>
 
       </header> */}
-      <UseReducerExample1/>
+      {/* <UseReducerExample1/> */}
+      <UseReducerExample2 />
     </div>
   );
 }
