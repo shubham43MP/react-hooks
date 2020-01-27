@@ -6,6 +6,7 @@ import UseReducerExample3 from './components/useReducerCounter3'
 import ComponentA from './components/ComponentA'
 import ComponentB from './components/ComponentB'
 import ComponentC from './components/ComponentC'
+import DataFetching1 from './components/dataFetching1'
 import './App.css';
 
 export const CountContext = React.createContext()
@@ -41,6 +42,7 @@ function App() {
         <ComponentA />
         <ComponentB />
         <ComponentC />
+        <DataFetching1 />
       </div>
     </CountContext.Provider>
   );
