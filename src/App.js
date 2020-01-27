@@ -1,32 +1,48 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import logo from './logo.svg';
 import UseReducerExample1 from './components/useReducerCounter'
 import UseReducerExample2 from './components/useReducerCounter2'
 import UseReducerExample3 from './components/useReducerCounter3'
+import ComponentA from './components/ComponentA'
+import ComponentB from './components/ComponentB'
+import ComponentC from './components/ComponentC'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+export const CountContext = React.createContext()
 
-      </header> */}
-      {/* <UseReducerExample1/> */}
-      {/* <UseReducerExample2 /> */}
-      <UseReducerExample3 />
-    </div>
+const initialState = 0
+
+const reducer = ( state, action ) => {
+    switch( action ){
+        case 'INCREMENT': 
+        return state + 1
+
+        case 'DECREMENT': 
+        return state - 1
+
+        case 'RESET': 
+        return initialState
+
+        default :
+        return state
+    }
+}
+
+function App() {
+  const [ count, dispatch ] = useReducer( reducer, initialState )
+  console.log( 'gggggggggggg' )
+  return (
+    <CountContext.Provider value={ { countState: count, countDispatch: dispatch } }>
+      <div className="App">
+        {/* <UseReducerExample1/> */}
+        {/* <UseReducerExample2 /> */}
+        {/* <UseReducerExample3 /> */}
+        Counter --------- { count }
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </div>
+    </CountContext.Provider>
   );
 }
 

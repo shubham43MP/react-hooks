@@ -20,3 +20,7 @@ useReducer is a function like reduce in Vanilla JS
 
 useReducer( reducer, initialState )
 reducer( currentState, action )
+
+Important to note:
+useReducer + useContext ----> Global State Management
+useReducer              ----> Local State Management
