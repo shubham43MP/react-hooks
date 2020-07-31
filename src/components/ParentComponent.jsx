@@ -15,6 +15,10 @@ function ParentComponent() {
 		setSalary(salary + 1000)
 	}, [salary])
 
+	// const incrementSalary = () => {
+	// 	setSalary(salary + 1000)
+	// }
+
 	return (
 		<div>
 			<Title />
